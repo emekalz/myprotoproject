@@ -1,0 +1,14 @@
+.input-label {
+  background:    #22d398 ;
+  color:#fff;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#file {
+  display:none;
+}
+.input-label:hover {
+pointer-events: visiblePainted;
+
+}

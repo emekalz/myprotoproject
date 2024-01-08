@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compactible" content="ie=edge" content="IE=7">
+    <meta name="author" content="Chukwuemeka-Olobi-Isiolu">
+    <meta name="keywords" content="dependent (edit content according to system use)">
+    <meta name="tools" tabindex="HTML 5, PHP 7, Bootstrap 4, SCSS, CSS, Jquery, PHP AJAX, JSON, JavaScript">
+
+    <title>Admin Add User</title>
+
+    <link rel="shortcut icon" type="image/logo" href="img/circles.jpeg">
+   
+    <!-- Bootstrap Stylesheets -->
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css.map">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css.map">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css.map">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.css.map">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.min">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.min.css">
+
+    <!-- SCSS Tools -->
+     <!-- SCSS Tools -->
+    
+     <link rel="stylesheet" type="text/scss" href="css/scss/bootstrap-grid.scss">
+     <link rel="stylesheet" type="text/scss" href="css/scss/bootstrap-reboot.scss">
+     <link rel="stylesheet" type="text/scss" href="css/scss/bootstrap.scss">
+    
+
+
+    <!-- Font-awesome Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/brands.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/regular.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/svg-with-js.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/svg-with-js.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/v4-shims.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/v4-shims.min.css">
+
+    <!-- Font-awesome Less -->
+    <link rel="stylesheet" type="text/less" href="fontawesome/less/fontawesome.less">
+    <link rel="stylesheet" type="text/less" href="fontawesome/less/brands.less">
+    <link rel="stylesheet" type="text/less" href="fontawesome/less/regular.less">
+    <link rel="stylesheet" type="text/less" href="fontawesome/less/solid.less">
+    <link rel="stylesheet" type="text/less" href="fontawesome/less/v4-shims.less">
+
+
+    <!-- Font-awesome Scss -->
+    <link rel="stylesheet" type="text/scss" href="fontawesome/scss/brands.scss">
+    <link rel="stylesheet" type="text/scss" href="fontawesome/scss/fontawesome.scss">
+    <link rel="stylesheet" type="text/scss" href="fontawesome/scss/regular.scss">
+    <link rel="stylesheet" type="text/scss" href="fontawesome/scss/solid.scss">
+    <link rel="stylesheet" type="text/scss" href="fontawesome/scss/v4-shims.scss">
+
+    
+    <!-- my-styleshhets -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/adduser.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header sticky-top">
+
+            <nav class="navbar-nav">
+                <div class="form-group-button">    
+                    <button class="btn btn-md ">
+                        <a href="index.php" target="blank">Administrator</a>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="header-logo">
+                <img src="../images/logo.png">
+            </div>
+        </div>
+        <br>
+            <section id="form">
+                <div class="jumbotron">
+                    <center>
+                    <h3 class="head-details">
+                        <i class="fas fa-users"></i>
+                        Create User Profile
+                    </h3>
+                    </center>
+                    <br>
+                    <!-- Db entrance here deminiature -->
+                    <form action="adduser.php" method="POST" autocomplete="off">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-id-badge"></i> First name</label>
+                                    <input type="text" name="name" id="name" class="form-control"
+                                        placeholder="First name" required data-validation-message-required="please fill out this field">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-id-badge"></i> Other name</label>
+                                    <input type="text" name="o_name" id="o_name" class="form-control"
+                                        placeholder="Other name(s)" required data-validation-message-required="please fill out this field">
+                                </div>  
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                                <div class="form-group">
+                                    <label for="ID"><i class="fas fa-id-card"></i> Member ID</label>
+                                    <input type="name" name="userID" id="userID" class="form-control"
+                                        placeholder="Member ID" required data-validation-message-required="please fill out this field">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-key"></i> Create Password</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Password" required data-validation-message-required="please fill out this field">
+                                </div>  
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                                <div class="form-group">
+                                    <label for="Bio"><i class="fas fa-user"></i> User Bio</label>
+                                    <textarea type="text" name="bio" id="bio" class="form-control"
+                                    placeholder="User Bio" aria-hidden="true">
+                                    </textarea>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div class="form-group form-group-button">
+                                        <button type="submit" class=" btn btn-md" id="btnsub" name="btnsub"><center>Save</center></button>
+                                    </div>
+                                </div>
+        
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+
+    </div>
+
+ 
+
+
+    
+    <!-- main-jquery/js -->
+    <script src="js/jquery.js"></script>
+    
+
+    <!-- Linked-bootstrap-Scripts -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js.map"></script>
+    <script src="js/button.js"></script>
+    <script src="js/button.js.map"></script>
+
+    <!-- Linked-font-awesome-Scripts -->
+    <script src="fontawesome/js/fontawesome.js"></script>
+    <script src="fontawesome/js/all.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="fontawesome/js/brands.js"></script>
+    <script src="fontawesome/js/brands.min.js"></script>
+    <script src="fontawesome/js/conflict-detection.js"></script>
+    <script src="fontawesome/js/conflict-detection.min.js"></script>
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="fontawesome/js/regular.js"></script>
+    <script src="fontawesome/js/regular.min.js"></script>
+    <script src="fontawesome/js/solid.js"></script>
+    <script src="fontawesome/js/solid.min.js"></script>   
+    <script src="fontawesome/js/v4-shims.js"></script>
+    <script src="fontawesome/js/v4-shims.min.js"></script>
+
+
+    <!-- Form for only admins to add users to the system -->
+
+    
+</body>
+</html>
